@@ -1,5 +1,5 @@
 import React from 'react';
-
+//
 export default class Animation extends React.Component {
 
   constructor(props) {
