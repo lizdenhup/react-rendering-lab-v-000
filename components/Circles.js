@@ -26,10 +26,10 @@ export default class Circles extends React.Component {
   }
 
   render() {
+      const { color } = this.props;
+      console.log(`A ${color} circle was rendered!`)
     return (
-      <div>
-        <button onClick={this.handleClick}>Swap red and green</button>
-        { this.state.circles.map((circle, index) => <Circle color={circle.color} key={index} /> ) }
+      <div className={`circle ${color}`}>
       </div>
     );
   }
